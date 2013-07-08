@@ -3,12 +3,21 @@ Given(/^I am on the puppy adoption site$/) do
   sleep 3
 end
 
-When(/^I click the View Details button$/) do
-  @browser.button(:value => "View Details").click
+When(/^I click the first View Details button$/) do
+  @browser.button(:value => 'View Details', :index => 0).click
 end
 
 When(/^I click the Adopt Me button$/) do
   @browser.button(:value => "Adopt Me!").click
+end
+
+When(/^I click the Adopt Another Puppy button$/) do
+  @browser.button(:value => "Adopt Another Puppy").click
+  sleep 3
+end
+
+When(/^I click the second View Details button$/) do
+  @browser.button(:value => "View Details", :index => 1).click
 end
 
 When(/^I click the Complete the Adoption button$/) do
