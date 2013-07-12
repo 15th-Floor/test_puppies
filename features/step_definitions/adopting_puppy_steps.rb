@@ -1,6 +1,6 @@
 Given(/^I am on the puppy adoption site$/) do
   @browser.goto "http://puppies.herokuapp.com"
-  sleep 3
+  sleep 4
 end
 
 When(/^I click the first View Details button$/) do

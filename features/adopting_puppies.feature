@@ -7,7 +7,7 @@ Feature: Adopting puppies
 Background:
     Given I am on the puppy adoption site
 
-Scenario: Adopting one puppy
+Scenario: Outline: Adopting one puppy
     When I click the first View Details button
     And I click the Adopt Me button
     And I click the Complete the Adoption button
